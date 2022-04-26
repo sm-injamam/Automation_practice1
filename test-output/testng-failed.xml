@@ -10,13 +10,20 @@
           <include name="locatorLearning"/>
         </methods>
       </class> <!-- testCases.Tc001_LocatorsLearning -->
-      <class name="advancedTestCase.Tc001_LocatorsLearning_adv">
+      <class name="testCases.TC009_Slider">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="locatorLearning"/>
+          <include name="sliderCheck"/>
         </methods>
-      </class> <!-- advancedTestCase.Tc001_LocatorsLearning_adv -->
+      </class> <!-- testCases.TC009_Slider -->
+      <class name="testCases.TC010_KeyboardEvent">
+        <methods>
+          <include name="keyboardEventCheck"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testCases.TC010_KeyboardEvent -->
       <class name="testCases.TC005_DropDown">
         <methods>
           <include name="setup"/>
@@ -25,6 +32,13 @@
           <include name="selectingValueFromDown"/>
         </methods>
       </class> <!-- testCases.TC005_DropDown -->
+      <class name="advancedTestCase.Tc001_LocatorsLearning_adv">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="locatorLearning"/>
+        </methods>
+      </class> <!-- advancedTestCase.Tc001_LocatorsLearning_adv -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

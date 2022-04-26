@@ -8,9 +8,12 @@
       <class name="testCases.TC006_RefreshAndNavigation"/>
       <class name="testCases.Tc003_verifyPageTitle"/>
       <class name="testCases.TC004_radioAndCheckBoxButton"/>
+      <class name="testCases.TC008_RightClick"/>
+      <class name="testCases.TC009_Slider"/>
       <class name="testCases.Tc001_LocatorsLearning"/>
       <class name="base.DriverSetup"/>
       <class name="testCases.TC005_DropDown"/>
+      <class name="testCases.TC010_KeyboardEvent"/>
       <class name="advancedTestCase.Tc001_LocatorsLearning_adv"/>
     </classes>
   </test> <!-- Test -->

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 4 failed,   6 passed</span>
+                    <span class="method-stats">12 methods, 6 failed,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,6 +102,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
                     <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC010_KeyboardEvent" class="method navigator-link" hash-for-method="keyboardEventCheck">keyboardEventCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCases.Tc001_LocatorsLearning" class="method navigator-link" hash-for-method="locatorLearning">locatorLearning</a> <!-- method navigator-link -->
@@ -120,6 +125,11 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCases.TC005_DropDown" class="method navigator-link" hash-for-method="selectingValueFromDown">selectingValueFromDown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC009_Slider" class="method navigator-link" hash-for-method="sliderCheck">sliderCheck</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -176,40 +186,6 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">advancedTestCase.Tc001_LocatorsLearning_adv</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="locatorLearning">
-                  </a> <!-- locatorLearning -->
-                  <span class="method-name">locatorLearning</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
-System info: host: &apos;DESKTOP-7FD4UDR&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d8a6f810158d7971857f59924ad4b414, get {url=https://rahulshettyacademy.com/locatorspractice/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\sminj\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60198}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60198/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d8a6f810158d7971857f59924ad4b414
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
-	at advancedTestCase.Tc001_LocatorsLearning_adv.locatorLearning(Tc001_LocatorsLearning_adv.java:14)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
               <span class="class-name">testCases.Tc001_LocatorsLearning</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -222,9 +198,9 @@ Session ID: d8a6f810158d7971857f59924ad4b414
 Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
 System info: host: &apos;DESKTOP-7FD4UDR&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d8a6f810158d7971857f59924ad4b414, get {url=https://rahulshettyacademy.com/locatorspractice/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\sminj\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60198}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60198/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d8a6f810158d7971857f59924ad4b414
+Command: [d2c7f750562e3185cecd004476515a6e, get {url=https://rahulshettyacademy.com/locatorspractice/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\sminj\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58929}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58929/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d2c7f750562e3185cecd004476515a6e
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -234,6 +210,74 @@ Session ID: d8a6f810158d7971857f59924ad4b414
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
 	at testCases.Tc001_LocatorsLearning.locatorLearning(Tc001_LocatorsLearning.java:14)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.TC009_Slider</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sliderCheck">
+                  </a> <!-- sliderCheck -->
+                  <span class="method-name">sliderCheck</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
+System info: host: &apos;DESKTOP-7FD4UDR&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d2c7f750562e3185cecd004476515a6e, get {url=https://jqueryui.com/slider/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\sminj\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58929}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58929/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d2c7f750562e3185cecd004476515a6e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
+	at testCases.TC009_Slider.sliderCheck(TC009_Slider.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.TC010_KeyboardEvent</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="keyboardEventCheck">
+                  </a> <!-- keyboardEventCheck -->
+                  <span class="method-name">keyboardEventCheck</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
+System info: host: &apos;DESKTOP-7FD4UDR&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d2c7f750562e3185cecd004476515a6e, get {url=http://automationpractice.com/index.php}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\sminj\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58929}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58929/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d2c7f750562e3185cecd004476515a6e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
+	at testCases.TC010_KeyboardEvent.keyboardEventCheck(TC010_KeyboardEvent.java:20)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
@@ -256,9 +300,9 @@ Session ID: d8a6f810158d7971857f59924ad4b414
 Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
 System info: host: &apos;DESKTOP-7FD4UDR&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d8a6f810158d7971857f59924ad4b414, get {url=https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select_multiple}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\sminj\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60198}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60198/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d8a6f810158d7971857f59924ad4b414
+Command: [d2c7f750562e3185cecd004476515a6e, get {url=https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select_multiple}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\sminj\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58929}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58929/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d2c7f750562e3185cecd004476515a6e
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -282,9 +326,9 @@ Session ID: d8a6f810158d7971857f59924ad4b414
 Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
 System info: host: &apos;DESKTOP-7FD4UDR&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d8a6f810158d7971857f59924ad4b414, get {url=https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select_multiple}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\sminj\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60198}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60198/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d8a6f810158d7971857f59924ad4b414
+Command: [d2c7f750562e3185cecd004476515a6e, get {url=https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select_multiple}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\sminj\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58929}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58929/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d2c7f750562e3185cecd004476515a6e
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -294,6 +338,40 @@ Session ID: d8a6f810158d7971857f59924ad4b414
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
 	at testCases.TC005_DropDown.selectingValueFromDown(TC005_DropDown.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">advancedTestCase.Tc001_LocatorsLearning_adv</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="locatorLearning">
+                  </a> <!-- locatorLearning -->
+                  <span class="method-name">locatorLearning</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
+System info: host: &apos;DESKTOP-7FD4UDR&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d2c7f750562e3185cecd004476515a6e, get {url=https://rahulshettyacademy.com/locatorspractice/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\sminj\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58929}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58929/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d2c7f750562e3185cecd004476515a6e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
+	at advancedTestCase.Tc001_LocatorsLearning_adv.locatorLearning(Tc001_LocatorsLearning_adv.java:14)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
@@ -312,6 +390,21 @@ Session ID: d8a6f810158d7971857f59924ad4b414
                   <a name="locatorLearning">
                   </a> <!-- locatorLearning -->
                   <span class="method-name">locatorLearning</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC004_radioAndCheckBoxButton</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RadioAndCheckBoxButtonInFrame">
+                  </a> <!-- RadioAndCheckBoxButtonInFrame -->
+                  <span class="method-name">RadioAndCheckBoxButtonInFrame</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -341,36 +434,6 @@ Session ID: d8a6f810158d7971857f59924ad4b414
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testCases.TC006_RefreshAndNavigation</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="navigateAndRefreshPage">
-                  </a> <!-- navigateAndRefreshPage -->
-                  <span class="method-name">navigateAndRefreshPage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testCases.TC004_radioAndCheckBoxButton</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="RadioAndCheckBoxButtonInFrame">
-                  </a> <!-- RadioAndCheckBoxButtonInFrame -->
-                  <span class="method-name">RadioAndCheckBoxButtonInFrame</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">testCases.TC007_Scroll</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -379,6 +442,21 @@ Session ID: d8a6f810158d7971857f59924ad4b414
                   <a name="scrollCheck">
                   </a> <!-- scrollCheck -->
                   <span class="method-name">scrollCheck</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC006_RefreshAndNavigation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateAndRefreshPage">
+                  </a> <!-- navigateAndRefreshPage -->
+                  <span class="method-name">navigateAndRefreshPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -400,9 +478,12 @@ Session ID: d8a6f810158d7971857f59924ad4b414
       &lt;class name=&quot;testCases.TC006_RefreshAndNavigation&quot;/&gt;
       &lt;class name=&quot;testCases.Tc003_verifyPageTitle&quot;/&gt;
       &lt;class name=&quot;testCases.TC004_radioAndCheckBoxButton&quot;/&gt;
+      &lt;class name=&quot;testCases.TC008_RightClick&quot;/&gt;
+      &lt;class name=&quot;testCases.TC009_Slider&quot;/&gt;
       &lt;class name=&quot;testCases.Tc001_LocatorsLearning&quot;/&gt;
       &lt;class name=&quot;base.DriverSetup&quot;/&gt;
       &lt;class name=&quot;testCases.TC005_DropDown&quot;/&gt;
+      &lt;class name=&quot;testCases.TC010_KeyboardEvent&quot;/&gt;
       &lt;class name=&quot;advancedTestCase.Tc001_LocatorsLearning_adv&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
@@ -417,7 +498,7 @@ Session ID: d8a6f810158d7971857f59924ad4b414
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (9 classes)</span>
+                <span class="test-name">Test (12 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -443,52 +524,60 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(12);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'navigateAndRefreshPage')
 data.setCell(0, 2, 'testCases.TC006_RefreshAndNavigation')
-data.setCell(0, 3, 26181);
+data.setCell(0, 3, 43320);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'locatorLearning')
-data.setCell(1, 2, 'testCases.Tc002_extract_string')
-data.setCell(1, 3, 23140);
+data.setCell(1, 1, 'scrollCheck')
+data.setCell(1, 2, 'testCases.TC007_Scroll')
+data.setCell(1, 3, 27673);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'scrollCheck')
-data.setCell(2, 2, 'testCases.TC007_Scroll')
-data.setCell(2, 3, 20759);
+data.setCell(2, 1, 'verifyPageTitle_shoudPass')
+data.setCell(2, 2, 'testCases.Tc003_verifyPageTitle')
+data.setCell(2, 3, 22044);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyPageTitle_shoudPass')
-data.setCell(3, 2, 'testCases.Tc003_verifyPageTitle')
-data.setCell(3, 3, 13999);
+data.setCell(3, 1, 'locatorLearning')
+data.setCell(3, 2, 'testCases.Tc002_extract_string')
+data.setCell(3, 3, 21366);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'RadioAndCheckBoxButtonInFrame')
 data.setCell(4, 2, 'testCases.TC004_radioAndCheckBoxButton')
-data.setCell(4, 3, 10314);
+data.setCell(4, 3, 17047);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'locatorLearning')
-data.setCell(5, 2, 'testCases.Tc001_LocatorsLearning')
-data.setCell(5, 3, 427);
+data.setCell(5, 1, 'isWebsiteSecured')
+data.setCell(5, 2, 'testCases.Tc003_verifyPageTitle')
+data.setCell(5, 3, 4290);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'selectingValueFromDown')
-data.setCell(6, 2, 'testCases.TC005_DropDown')
-data.setCell(6, 3, 24);
+data.setCell(6, 1, 'sliderCheck')
+data.setCell(6, 2, 'testCases.TC009_Slider')
+data.setCell(6, 3, 2163);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'isWebsiteSecured')
-data.setCell(7, 2, 'testCases.Tc003_verifyPageTitle')
-data.setCell(7, 3, 16);
+data.setCell(7, 1, 'locatorLearning')
+data.setCell(7, 2, 'testCases.Tc001_LocatorsLearning')
+data.setCell(7, 3, 15);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'locatorLearning')
-data.setCell(8, 2, 'advancedTestCase.Tc001_LocatorsLearning_adv')
-data.setCell(8, 3, 11);
+data.setCell(8, 1, 'selectingMultipleValueFromDropDown')
+data.setCell(8, 2, 'testCases.TC005_DropDown')
+data.setCell(8, 3, 12);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'selectingMultipleValueFromDropDown')
+data.setCell(9, 1, 'selectingValueFromDown')
 data.setCell(9, 2, 'testCases.TC005_DropDown')
 data.setCell(9, 3, 11);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'keyboardEventCheck')
+data.setCell(10, 2, 'testCases.TC010_KeyboardEvent')
+data.setCell(10, 3, 10);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'locatorLearning')
+data.setCell(11, 2, 'advancedTestCase.Tc001_LocatorsLearning_adv')
+data.setCell(11, 3, 9);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -503,9 +592,45 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">16 ignored methods</span>
+            <span class="header-content">23 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.Tc001_LocatorsLearning</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC004_radioAndCheckBoxButton</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC009_Slider</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TC010_KeyboardEvent</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">testCases.Tc003_verifyPageTitle</span>
               <div class="ignored-methods-div">
@@ -516,25 +641,18 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">testCases.TC006_RefreshAndNavigation</span>
+              <span class="ignored-class-name">testCases.TC008_RightClick</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">setup</span>
+                <span class="ignored-method-name">doubleclickRightClick</span>
                 <br/>
                 <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">base.DriverSetup</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setup</span>
-                <br/>
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testCases.TC004_radioAndCheckBoxButton</span>
+              <span class="ignored-class-name">testCases.TC007_Scroll</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">tearDown</span>
                 <br/>
@@ -552,16 +670,7 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">testCases.Tc001_LocatorsLearning</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setup</span>
-                <br/>
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testCases.TC007_Scroll</span>
+              <span class="ignored-class-name">testCases.TC006_RefreshAndNavigation</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setup</span>
                 <br/>
@@ -571,6 +680,15 @@ return data;
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">testCases.TC005_DropDown</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">base.DriverSetup</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">tearDown</span>
                 <br/>
@@ -593,39 +711,48 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">locatorLearning</span>
-                <span class="method-start">25768 ms</span>
+                <span class="method-start">35657 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC007_Scroll</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">scrollCheck</span>
-                <span class="method-start">48949 ms</span>
+                <span class="method-start">57144 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC006_RefreshAndNavigation</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">navigateAndRefreshPage</span>
-                <span class="method-start">69714 ms</span>
+                <span class="method-start">84825 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.Tc003_verifyPageTitle</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyPageTitle_shoudPass</span>
-                <span class="method-start">95906 ms</span>
+                <span class="method-start">128184 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">isWebsiteSecured</span>
-                <span class="method-start">109911 ms</span>
+                <span class="method-start">150233 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC004_radioAndCheckBoxButton</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">RadioAndCheckBoxButtonInFrame</span>
-                <span class="method-start">109930 ms</span>
+                <span class="method-start">154533 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC009_Slider</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">sliderCheck</span>
+                <span class="method-start">171587 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -634,7 +761,7 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">locatorLearning</span>
-                <span class="method-start">120259 ms</span>
+                <span class="method-start">173880 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -643,13 +770,22 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">selectingValueFromDown</span>
-                <span class="method-start">120726 ms</span>
+                <span class="method-start">173901 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">selectingMultipleValueFromDropDown</span>
-                <span class="method-start">120755 ms</span>
+                <span class="method-start">173918 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC010_KeyboardEvent</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">keyboardEventCheck</span>
+                <span class="method-start">173939 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -658,14 +794,14 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">locatorLearning</span>
-                <span class="method-start">120777 ms</span>
+                <span class="method-start">173957 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.Tc002_extract_string</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">120936 ms</span>
+                <span class="method-start">174510 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
